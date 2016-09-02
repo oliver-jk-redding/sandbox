@@ -1,0 +1,71 @@
+@background-color: #ffffff;
+@text-color: #1A237E;
+
+body {
+	background-color: tan;
+}
+
+div {
+	background-color: yellow;
+	color: green;
+}
+
+ul {
+	background-color: #03A9F4;
+	padding: 10px;
+	list-style: none;
+	@text-color: red;
+
+	li {
+		background-color: @background-color;
+		border-radius: 3px;
+		margin: 10px 0;
+		color: @text-color;
+
+		div {
+			color: tan;
+			background-color: @background-color;
+		}
+	}
+}
+
+#circle(@size: 25px) {
+	background-color: #4CAF50;
+	border-radius: 100%;
+	width: @size;
+	height: @size;
+}
+
+#small-circle {
+	#circle
+}
+
+#big-circle {
+	#circle(100px)
+}
+
+@div-width: 100px;
+@color: #03A9F4;
+@var: #004590;
+
+// div {
+// 	height: 50px;
+// 	width: 50px;
+// 	display: inline-block;
+// 	background-color: @var;
+
+// 	&:hover {
+// 		background-color: fadeout(@var, 50%)
+// 	}
+// }
+
+// #left {
+// 	width: @div-width;
+// 	background-color: @color + 100;
+// }
+
+// #right {
+// 	width: @div-width * 2;
+// 	background-color: @color
+// }
+
