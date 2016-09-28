@@ -1,0 +1,6 @@
+wordpress
+latest.tar.gz
+ansible
+Vagrantfile
+.vagrant
+install.sh
